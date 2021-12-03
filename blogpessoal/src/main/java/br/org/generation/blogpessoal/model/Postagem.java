@@ -26,8 +26,8 @@ public class Postagem {
 	private Long id;
 	
 	@NotBlank(message = "O atributo título é obrigatório!")
-	@Size(min = 5, max =100, message = "O atributo texto deve ter no ,ínimo 5 e no máximo 100 caracteres!")
-	private String texto;
+	@Size(min = 5, max =100, message = "O atributo titulo deve ter no ,ínimo 5 e no máximo 100 caracteres!")
+	private String titulo;
 	
 	@UpdateTimestamp // a data atualiza sozinha com o sistema
 	private LocalDate data;
@@ -41,11 +41,11 @@ public class Postagem {
 	}
 
 	public String getTexto() {
-		return texto;
+		return titulo;
 	}
 
 	public void setTexto(String texto) {
-		this.texto = texto;
+		this.titulo = texto;
 	}
 
 	public LocalDate getData() {
